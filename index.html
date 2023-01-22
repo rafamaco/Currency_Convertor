@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Currency Convertor">
+    <meta name="author" content="Rafael Magalhaes da Conceicao">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Currency Convertor</title>
+</head>
+
+<body>
+    <section id="content">
+
+        <div class="container">
+
+            <h1>Currency Convertor</h1>
+
+            <form class="form" id="form" name="form">
+
+                <div class="form-control">
+
+                    <label>Amount</label>
+                    <input type="text" placeholder="Enter your amount*" id="amount">
+                    <i class="img-success"><img src="./img/success-icon.svg" alt=""></i>
+                    <i class="img-error"><img src="./img/error-icon.svg" alt=""></i>
+                    <small>Error Message</small>
+
+                </div>
+
+                <label for="oper">Currency I Have:</label>
+                <select name="toRate" id="toRate">
+                </select>
+                <hr>
+                <label for="oper">Currency I Want:</label>
+                <select name="fromRate" id="fromRate">
+                </select>
+                <hr>
+                
+
+                <div class="form-control">
+
+                    <label id="result-label">Currency after conversion:</label>
+                    <input type="text" placeholder="Result*" id="result" name="result">
+                    <i class="img-success"><img src="./img/success-icon.svg" alt=""></i>
+                    <i class="img-error"><img src="./img/error-icon.svg" alt=""></i>
+                    <small>Error Message</small>
+
+                </div>
+
+                <button type="button" name="send" id="send" value="Convert">Convert</button>
+                <button type="button" name="clear" id="clear">Clear</button>
+
+            </form>
+
+        </div><!--End container-->
+
+        <span id="img"></span><!--Delayed Image-->
+
+    </section><!-- End content-contact-->
+
+    <script src="./js/main.js"></script><!--CHANGE JS HERE IF YOU WISH-->
+
+</body>
+
+</html>
